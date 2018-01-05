@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Note App</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <div class="container-fluid wrapper">
+    <div>
+      <h1>All Notes</h1>
+    </div>
+    <div class="note-container">
+      <ul>
+        <% notes.forEach(function(note){ %>
+          <li>
+            <strong>Author:</strong> <%= note.author %> <br>
+            <strong>Date Created:</strong> <%= note.createdDate %> <br>
+            <strong>Description:</strong> <%= note.description %>
+          </li>
+        <% }); %>
+      </ul>
+      </div>
+
+      <div class="link-wrapper">
+        <a class="link" href="/">Home</a>
+      </div>
+  </div>
+  <!-- Scripts -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

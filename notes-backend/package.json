@@ -1,0 +1,18 @@
+{
+  "name": "notes-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server.js"
+  },
+  "author": "Daniel Usani",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.1",
+    "mongoose": "^5.0.0-rc2"
+  }
+}

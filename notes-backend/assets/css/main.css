@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFB239;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 250px;
+  padding: 10px 20px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.wrapper button {
+  width: 250px;
+}
+
+.link-wrapper {
+  width: 250px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  padding: 0px 10px;
+}
+
+.note-container li {
+  width: 400px;
+  list-style: none;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.note-container li:nth-child(even) {
+  background-color: #3677AF;
+  color: white;
+}
